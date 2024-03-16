@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume Builder</title>
+  <link rel="stylesheet" href="/style.css"> 
+</head>
+<body>
+  <div class="form-container">
+  <h1 style="text-align-last: center;">Resume</h1>
+  <form action="/generate-resume" method="POST">
+
+    <!-- Personal Details -->
+    <h3>Personal-Details:</h3>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone">
+            </div>
+            <div class="form-group">
+                <label for="github">Github</label>
+                <input type="url" id="github" name="github" placeholder="https://github.com/YOURUSERNAME">
+            </div>
+            <div class="form-group">
+                <label for="linkedin">LinkedIn</label>
+                <input type="url" id="linkedin" name="linkedin" placeholder="https://linkedin.com/in/YOURUSERNAME">
+            </div>
+            <div class="form-group">
+                <label for="skills">Skills</label>
+                <textarea id="skills" name="skills" placeholder="Enter skills and separate each of them with a comma"></textarea>
+            </div> 
+
+         <!---EDUCATION-->
+            <h3>Education:</h3>
+            <div class="form-group">
+                <label for="institute">Institute Name</label>
+                <input type="text" id="institute" name="institute">
+            </div>
+            <div class="form-group">
+                <label for="stream">Stream</label>
+                <input type="text" id="stream" name="stream">
+            </div>
+            <div class="form-group">
+                <label for="grade">Overall Grade</label>
+                <input type="text" id="grade" name="grade">
+            </div>
+            
+            <!-- Project Section -->
+            <h3>Project:</h3>
+            <div class="form-group">
+                <label for="project1">Project-1 Name</label>
+                <input type="text" id="project1" name="project1">
+            </div>
+            <div class="form-group">
+                <label for="description1">Short Description About Project-1</label>
+                <textarea id="description1" name="description1"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="project2">Project-2 Name</label>
+                <input type="text" id="project2" name="project2">
+            </div>
+            <div class="form-group">
+                <label for="description2">Short Description About Project-2</label>
+                <textarea id="description2" name="description2"></textarea>
+            </div>
+            
+            <!-- Experience Section -->
+            <h3> Experience:</h3>
+            <div class="form-group">
+                <label for="company">Current Company Name</label>
+                <input type="text" id="company" name="company">
+            </div>
+            <div class="form-group">
+                <label for="experience">Total Experience</label>
+                <input type="text" id="experience" name="experience">
+            </div>
+            <div class="form-group">
+                <label for="notice">Notice Period</label>
+                <input type="text" id="notice" name="notice">
+            </div>
+    
+    <input type="submit" value="Generate Resume">
+  </form>
+</div>
+</body>
+</html>

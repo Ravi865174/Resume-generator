@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Resume of <%= userData.name %></title>
+  <link rel="stylesheet" href="/resume.css">
+</head>
+<body>
+  <div class="resume-container">
+    <h1 style="text-align: center;">Resume</h1>
+    <section class="form-group">
+      <h2>Personal Details</h2>
+      <p><strong>Name:</strong> <%= userData.name %></p>
+      <p><strong>Email:</strong> <%= userData.email %></p>
+      <p><strong>Phone:</strong> <%= userData.phone %></p>
+      <p><strong>Github:</strong> <a href="<%= userData.github %>"><%= userData.github %></a></p>
+      <p><strong>LinkedIn:</strong> <a href="<%= userData.linkedin %>"><%= userData.linkedin %></a></p>
+      <p><strong>Skills:</strong> <%= userData.skills %></p>
+    </section>
+
+    <section class="form-group">
+      <h2>Education</h2>
+      <p><strong>Institute Name:</strong> <%= userData.institute %></p>
+      <p><strong>Stream:</strong> <%= userData.stream %></p>
+      <p><strong>Overall Grade:</strong> <%= userData.grade %></p>
+    </section>
+
+    <section class="form-group">
+      <h2>Projects</h2>
+      <div>
+        <h3>Project 1</h3>
+        <p><strong>Name:</strong> <%= userData.project1 %></p>
+        <p><strong>Description:</strong> <%= userData.description1 %></p>
+      </div>
+      <div>
+        <h3>Project 2</h3>
+        <p><strong>Name:</strong> <%=userData.project2 %></p>
+        <p><strong>Description:</strong> <%=userData.description2 %></p>
+      </div>
+    </section>
+
+    <section class="form-group">
+      <h2>Experience</h2>
+      <p><strong>Current Company Name:</strong> <%=userData.company%></p>
+      <p><strong>Total Experience:</strong> <%=userData.experience %></p>
+      <p><strong>Notice Period:</strong> <%= userData.notice %></p>
+    </section>
+
+  </div>
+</body>
+</html>
